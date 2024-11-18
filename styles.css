@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Supermercado+One&display=swap');
+
+/*header{
+    background-color: #edeecc;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(0, 47, 255);
+
+}*/
+
+body{
+    font-family: "Combo";
+    background-color: aliceblue;
+    text-align: center;
+}
+.principal{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: antiquewhite;
+    z-index: 100;
+}
+.productos{
+    color: antiquewhite;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+}
+.productos a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+.productos a:hover{
+    background-color: rgb(0, 255, 128);
+    border-radius: 4px;
+    color: black;
+}
+.desplegable{
+    position: relative;
+}
+.subproductos{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: blue;
+    list-style-type: none;
+    padding: 0;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.subproductos li{
+    width: 100%;
+    list-style-type: none;
+}
+.subproductos li a{
+    display: block;
+    padding: 8px 16px;
+    color: aquamarine;
+    text-decoration: none;
+}
+.subproductos li a:hover{
+    background-color: brown;
+    color: chartreuse;
+}
+img{
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+.container{
+    background-color: rgb(236, 231, 224);
+    box-shadow: 0 4px 8px rgba(221, 227, 231, 0.644);
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.Contacto{
+    background-color: rgb(246, 247, 225);
+    font-weight: bold;
+    padding: 1rem 0;
+    display: flex;
+    gap: 25%;
+    border-radius: 6px;
+}
+.contenidopie{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 0 1rem;
+}
